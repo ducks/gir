@@ -2,11 +2,12 @@
 extern crate structopt;
 extern crate ini;
 
-mod lib;
+mod commands;
+mod repo;
 
-use lib::repo::GitRepository;
+use repo::GitRepository;
 
 fn main() {
-    let repo = GitRepository::new();
+    let repo = GitRepository::init();
     println!("{:#?}", repo);
 }

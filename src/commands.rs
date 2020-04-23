@@ -1,3 +1,5 @@
+use structopt::StructOpt;
+
 #[derive(StructOpt, Debug)]
 enum GitCommands {
     Add {
